@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký thành viên CLB IT HUB</title>
+    <link rel="stylesheet" href="../css/style3.css">
+</head>
+
+<body>
+<form>
+<h2>Đăng ký thành viên CLB IT HUB</h2>
+
+    <!-- Họ tên -->
+    <label>Họ tên:</label><br>
+    <input type="text" name="hoten" placeholder="Nhập họ tên"><br><br>
+
+    <!-- MSSV -->
+    <label>MSSV:</label><br>
+    <input type="text" name="mssv" pattern="[0-9]{8}" placeholder="Nhập MSSV (8 số)"><br><br>
+
+    <!-- Mã lớp -->
+    <label>Mã lớp:</label><br>
+    <select name="malop">
+        <option>DA24TTA</option>
+        <option>DA24TTB</option>
+        <option>DA24TTC</option>
+        <option>DA24TTD</option>
+        <option>DA24TTE</option>
+    </select><br><br>
+
+    <!-- Giới tính -->
+    <label>Giới tính:</label><br>
+    <input type="radio" name="gioitinh" value="nam"> Nam
+    <input type="radio" name="gioitinh" value="nu"> Nữ<br><br>
+
+    <!-- Điểm mạnh -->
+    <label>Điểm mạnh:</label><br>
+    <input type="checkbox" name="diemmanh" value="laptrinh"> Lập trình<br>
+    <input type="checkbox" name="diemmanh" value="thietke"> Thiết kế<br>
+    <input type="checkbox" name="diemmanh" value="giaotiep"> Giao tiếp<br>
+    <input type="checkbox" name="diemmanh" value="teamwork"> Teamwork<br><br>
+
+    <!-- Nội dung -->
+    <label>Nội dung giới thiệu:</label><br>
+    <textarea rows="5" cols="40" placeholder="Nhập nội dung..."></textarea><br><br>
+
+    <!-- Nút -->
+    <button type="submit">Đăng ký</button>
+    <button type="reset">Nhập lại</button>
+
+</form>
+
+</body>
+</html>
