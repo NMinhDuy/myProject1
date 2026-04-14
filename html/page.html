@@ -3,44 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>Giới thiệu bản thân</title>
+    <link rel="stylesheet" href="css/style1.css">
 </head>
 <body>
-
-    <!-- Heading -->
-    <h1>Xin chào, tôi là  Nguyễn Minh Duy </h1>
+<div class="container">
+   <h1 class="title">Xin chào, tôi là Nguyễn Minh Duy</h1>
 
     <!-- Paragraph -->
     <p>
-        Tôi là một sinh viên yêu thích công nghệ và lập trình. 
-        Tôi đang học HTML, CSS và JavaScript để tạo ra các trang web đẹp.
+        Xin chào, tôi tên Nguyễn Minh Duy, là sinh viên Khoa Kỹ thuật và Công
+        nghệ, Trường Đại học Trà Vinh. Hiện tại, tôi đang theo học ngành Công
+        nghệ Thông tin với chương trình đào tạo kỹ sư 150 tín chỉ. Với những
+        kinh nghiệm tích lũy được trong 02 năm theo học tại trường và hoài bão
+        của bản thân, tôi hy vọng sau này sẽ được quay lại trường với vai trò là
+        một chuyên viên công nghệ thông tin hoặc có thể tham gia giảng dạy tại
+        các trường đại học, cao đẳng trong khu vực Đồng bằng Sông Cửu Long. Với
+        sức trẻ đầy nhiệt huyết, tôi hy vọng sẽ góp phần nhỏ trong việc truyền
+        cảm hứng tích cực về thế giới công nghệ và rèn luyện cho thế hệ sinh
+        viên sau mình tìm hiểu sâu sắc về công nghệ và trí tuệ nhân tạo.
     </p>
 
     <!-- Image -->
-    <h2>Ảnh của tôi</h2>
-    <img src="assets/image/ảnh.jpg" alt="Ảnh đại diện" width="200">
+    <h2 id="title" onclick="toggleImage()" style="cursor: pointer;">
+    Hình ảnh
+</h2>
 
-    <!-- Link -->
-    <h2>Liên hệ</h2>
+    <img id="myImage" src="../assets/image/ảnh tui.jpg" width="200" style="display: none;">
+    <h2>Sở thích và Kỹ năng</h2>
+<table border="1" style="margin: auto; border-collapse: collapse;">
+    <tr>
+        <th>Sở thích</th>
+        <th>Kỹ năng</th>
+    </tr>
+    <tr>
+        <td>Lập trình</td>
+        <td>HTML cơ bản</td>
+    </tr>
+    <tr>
+        <td>Chơi game</td>
+        <td>CSS cơ bản</td>
+    </tr>
+    <tr>
+        <td>Nghe nhạc</td>
+        <td>JavaScript cơ bản</td>
+    </tr>
+    <tr>
+        <td>Xem phim</td>
+        <td></td>
+    </tr>
+</table>
+     <h2>Liên hệ</h2>
     <p>
         Bạn có thể xem thêm thông tin tại 
         <a href="https://facebook.com" target="_blank">Facebook của tôi</a>
     </p>
 
-    <!-- List -->
-    <h2>Sở thích của tôi</h2>
-    <ul>
-        <li>Lập trình</li>
-        <li>Chơi game</li>
-        <li>Nghe nhạc</li>
-        <li>Xem phim</li>
-    </ul>
+</div>
+<script>
+function toggleImage() {
+    var img = document.getElementById("myImage");
+    var title = document.getElementById("title");
 
-    <h2>Kỹ năng</h2>
-    <ol>
-        <li>HTML cơ bản</li>
-        <li>CSS cơ bản</li>
-        <li>JavaScript cơ bản</li>
-    </ol>
-
+    if (img.style.display === "none") {
+        img.style.display = "block";
+        title.innerText = "Ẩn hình ảnh";
+    } else {
+        img.style.display = "none";
+        title.innerText = "Hình ảnh";
+    }
+}
+</script>
 </body>
 </html>
